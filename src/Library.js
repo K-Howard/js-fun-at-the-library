@@ -13,7 +13,7 @@ function addBook(library, book) {
 }
 
 function checkoutBook(library, title, genre) {
-  let success;
+  var success;
   for (var i = 0; i < library.shelves[genre].length; i++) {
     if (library.shelves[genre][i].title === title) {
       library.shelves[genre].splice(i, 1)
